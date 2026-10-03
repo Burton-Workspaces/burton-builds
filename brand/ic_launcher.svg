@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Burton Builds">
+  <rect width="64" height="64" fill="#0c0c0c"/>
+  <path fill="#2a2a2a" d="M0 44 16 24 26 34 32 16 40 32 50 20 64 44V64H0Z"/>
+  <g fill="#c8c8c8" transform="translate(16 14) scale(1.35)">
+    <path d="M11.99 18.54 4.62 12.81 3 14.07l9 7 9-7-1.63-1.27zM12 16l7.36-5.73L21 9l-9-7-9 7 1.63 1.27L12 16z"/>
+  </g>
+</svg>

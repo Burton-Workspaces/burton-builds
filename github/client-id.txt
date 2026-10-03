@@ -1,0 +1,2 @@
+# Public GitHub OAuth Client ID (no secret). Create an OAuth app with callback:
+# https://burton-workspaces.github.io/burton-builds/oauth/
