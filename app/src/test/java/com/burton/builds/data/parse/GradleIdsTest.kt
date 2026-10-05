@@ -29,7 +29,7 @@ class GradleIdsTest {
         assertTrue(AndroidCatalog.looksLikeAndroidRepo("burton-pod", "Kotlin"))
         assertTrue(AndroidCatalog.looksLikeAndroidRepo("burton-photos-android", "Kotlin"))
         assertFalse(AndroidCatalog.looksLikeAndroidRepo("burton-apps-site", "Kotlin"))
-        assertFalse(AndroidCatalog.looksLikeAndroidRepo("burton-sonos-fdroid", ""))
+        assertFalse(AndroidCatalog.looksLikeAndroidRepo("rabun-app-dist", ""))
         assertFalse(AndroidCatalog.looksLikeAndroidRepo("rabun-git", "Rust"))
     }
 }

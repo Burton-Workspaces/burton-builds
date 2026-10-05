@@ -2,7 +2,7 @@
 
 A GitHub Actions client for Burton Workspaces Android apps, with the same look as the other Burton apps. Sign in with **Connect with GitHub**, pick public Android apps in [Burton-Workspaces](https://github.com/Burton-Workspaces), and watch, rerun, cancel, or dispatch workflow runs.
 
-Signed APKs are published on [GitHub Releases](https://github.com/Burton-Workspaces/burton-builds/releases). Droidify / F-Droid: [burton-sonos-fdroid](https://github.com/Burton-Workspaces/burton-sonos-fdroid) (`https://burton-workspaces.github.io/burton-sonos-fdroid/fdroid/repo`).
+Signed APKs are published on [GitHub Releases](https://github.com/Burton-Workspaces/burton-builds/releases). Droidify / F-Droid: [burton-app-dist](https://github.com/Burton-Workspaces/burton-app-dist) (`https://burton-workspaces.github.io/burton-app-dist/fdroid/repo`).
 
 ## What it does
 

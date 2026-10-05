@@ -7,13 +7,13 @@ usage() {
   cat <<'EOF' >&2
 Usage: scripts/setup-fdroid-and-secrets.sh
 
-Idempotent. Reuses ~/fdroid and ../burton-sonos-fdroid when they already exist.
+Idempotent. Reuses ~/fdroid and ../rabun-app-dist when they already exist.
 Copies a sibling Burton JKS when this repo has no keystore yet, then sets
 KEYSTORE_BASE64 / KEYSTORE_PASSWORD (and KEY_ALIAS / KEY_PASSWORD if needed).
 
 Optional environment:
   FDROID_ROOT           fdroid init directory (default: $HOME/fdroid)
-  FDROID_PAGES_DIR      Pages checkout (default: ../burton-sonos-fdroid)
+  FDROID_PAGES_DIR      Pages checkout (default: ../rabun-app-dist)
   FDROID_REPO_URL       Written into config.yml (default: Burton Pages catalog)
   GH_REPO               owner/name (default: git remote, else Burton-Workspaces/burton-builds)
   CREATE_REPO           1 to `gh repo create` when GH_REPO is missing (default: 1)
@@ -33,18 +33,18 @@ export PATH="${HOME}/.local/bin:${PATH}"
 
 FDROID_ROOT="${FDROID_ROOT:-$HOME/fdroid}"
 if [[ -z "${FDROID_PAGES_DIR:-}" ]]; then
-  for candidate in "$(cd "$ROOT/.." && pwd)/burton-sonos-fdroid" "$HOME/Code/burton-sonos-fdroid"; do
+  for candidate in "$(cd "$ROOT/.." && pwd)/rabun-app-dist" "$HOME/Code/rabun-app-dist"; do
     if [[ -d "$candidate/.git" ]]; then
       FDROID_PAGES_DIR="$candidate"
       break
     fi
   done
-  FDROID_PAGES_DIR="${FDROID_PAGES_DIR:-$(cd "$ROOT/.." && pwd)/burton-sonos-fdroid}"
+  FDROID_PAGES_DIR="${FDROID_PAGES_DIR:-$(cd "$ROOT/.." && pwd)/rabun-app-dist}"
 fi
-FDROID_REPO_URL="${FDROID_REPO_URL:-https://burton-workspaces.github.io/burton-sonos-fdroid/fdroid/repo}"
+FDROID_REPO_URL="${FDROID_REPO_URL:-https://burton-workspaces.github.io/burton-app-dist/fdroid/repo}"
 CREATE_REPO="${CREATE_REPO:-1}"
 PACKAGE_ID="com.burton.builds"
-PAGES_REPO="Burton-Workspaces/burton-sonos-fdroid"
+PAGES_REPO="Burton-Workspaces/burton-app-dist"
 
 prop() {
   local file="$1" key="$2"
